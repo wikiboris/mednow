@@ -16,7 +16,7 @@ export default function FeedPage({ posts, page, total }) {
       <StaticWrapper>
         <div className='max-w-full mb-10'>
           <Search />
-          <div className='grid grid-cols-3 gap-4 sm:grid-cols-1 lg:grid-cols-3'>
+          <div className='grid gap-4 sm:grid-cols-1 lg:grid-cols-3'>
             {posts.map((post: PostType) => (
               <Post key={post.id} post={post} />
             ))}
